@@ -1,0 +1,1436 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "2aaf6c0ae473",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "redhat",
+      "Name": "8.7"
+    },
+    "ImageID": "sha256:2aaf6c0ae4731a1b231bbb6c6d844a88ce6de2287fadce9bc96621b06bf97590",
+    "DiffIDs": [
+      "sha256:55ea6d5a354edb8a6eeeadb772359359f82959156d04193d5a7b2d79c827d9ee",
+      "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d",
+      "sha256:a9ed685f6644acb6189830fc6de9214c929180c151055543bbfc180675d3fbc9",
+      "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26",
+      "sha256:5c00dc1b4100409c8769cdc961009bc17e79c737fc1f7c575ef0f98b4eeb6173",
+      "sha256:45927ac9b717aee2a521a5cbe225fe6d41e17e9c47ead6919ede4ac634ef1143",
+      "sha256:42142017a69c0d7f10d946c9dc3ee8e87b0d2b04db59361caf6564373f67c1b2"
+    ],
+    "RepoTags": [
+      "sonatype/nexus3:latest"
+    ],
+    "RepoDigests": [
+      "sonatype/nexus3@sha256:5ad9da8f8424e4a040456d9ffb4194296f1fdac01d0c2311ee6c6e282584d1ea"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "f4618cede9ce2e9b653d0108f9e9d6f30c3b34d52b4d417284fc31256b61be3a",
+      "created": "2023-04-18T19:39:58.005095009Z",
+      "docker_version": "20.10.14",
+      "history": [
+        {
+          "created": "2023-03-28T04:14:20.490292864Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:c98cdf319117fa910a3dfc7321ef0effa1a28c665b2f2fa73ebaa3689ade2e73 in / ",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.174945311Z",
+          "created_by": "/bin/sh -c mv -f /etc/yum.repos.d/ubi.repo /tmp || :",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.445122554Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem ",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.765855391Z",
+          "created_by": "/bin/sh -c #(nop) ADD multi:a0d591ea758c3bb2aae175a8339f129cffea7891ee98013252c960233e9aeaca in /etc/yum.repos.d/ ",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.765898679Z",
+          "created_by": "/bin/sh -c #(nop) LABEL maintainer=\"Red Hat, Inc.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766031387Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.component=\"ubi8-minimal-container\"       name=\"ubi8-minimal\"       version=\"8.7\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.76606088Z",
+          "created_by": "/bin/sh -c #(nop) LABEL com.redhat.license_terms=\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766094913Z",
+          "created_by": "/bin/sh -c #(nop) LABEL summary=\"Provides the latest release of the minimal Red Hat Universal Base Image 8.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766148404Z",
+          "created_by": "/bin/sh -c #(nop) LABEL description=\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766182339Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.k8s.display-name=\"Red Hat Universal Base Image 8 Minimal\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766200472Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.expose-services=\"\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.76622721Z",
+          "created_by": "/bin/sh -c #(nop) LABEL io.openshift.tags=\"minimal rhel8\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766238863Z",
+          "created_by": "/bin/sh -c #(nop) ENV container oci",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766279319Z",
+          "created_by": "/bin/sh -c #(nop) ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:21.766285625Z",
+          "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:22.368395243Z",
+          "created_by": "/bin/sh -c rm -rf /var/log/*",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:22.3684468Z",
+          "created_by": "/bin/sh -c #(nop) LABEL release=1107",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:22.632017097Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:10b280e2321465b3393b9a8868fd316eecb7a13cf1af7eead7abbbd2a70f18f5 in /root/buildinfo/content_manifests/ubi8-minimal-container-8.7-1107.json ",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:22.886084994Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:0c1185fd8ed5b662089d2c0b0feddf98b9a31f3017b4e236cc58f63a8e595291 in /root/buildinfo/Dockerfile-ubi8-minimal-8.7-1107 ",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:22.886333923Z",
+          "created_by": "/bin/sh -c #(nop) LABEL \"distribution-scope\"=\"public\" \"vendor\"=\"Red Hat, Inc.\" \"build-date\"=\"2023-03-28T04:02:11\" \"architecture\"=\"x86_64\" \"vcs-type\"=\"git\" \"vcs-ref\"=\"146fdafc2595e26f5f9c1b9a2b3f36bbca8237e4\" \"io.k8s.description\"=\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\" \"url\"=\"https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8-minimal/images/8.7-1107\"",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:23.533100528Z",
+          "created_by": "/bin/sh -c rm -f '/etc/yum.repos.d/repo-1a3a9.repo' '/etc/yum.repos.d/repo-7eb39.repo'",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:24.171664741Z",
+          "created_by": "/bin/sh -c rm -f /tmp/tls-ca-bundle.pem",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-03-28T04:14:25.435998801Z",
+          "created_by": "/bin/sh -c mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :"
+        },
+        {
+          "created": "2023-04-18T19:39:28.853753236Z",
+          "created_by": "/bin/sh -c #(nop)  LABEL name=Nexus Repository Manager maintainer=Sonatype \u003csupport@sonatype.com\u003e vendor=Sonatype version=3.52.0-01 release=3.52.0 url=https://sonatype.com summary=The Nexus Repository Manager server           with universal support for popular component formats. description=The Nexus Repository Manager server           with universal support for popular component formats. run=docker run -d --name NAME           -p 8081:8081           IMAGE stop=docker stop NAME com.sonatype.license=Apache License, Version 2.0 com.sonatype.name=Nexus Repository Manager base image io.k8s.description=The Nexus Repository Manager server           with universal support for popular component formats. io.k8s.display-name=Nexus Repository Manager io.openshift.expose-services=8081:8081 io.openshift.tags=Sonatype,Nexus,Repository Manager",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:29.04277212Z",
+          "created_by": "/bin/sh -c #(nop)  ARG NEXUS_VERSION=3.52.0-01",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:29.282547856Z",
+          "created_by": "/bin/sh -c #(nop)  ARG NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:29.499399004Z",
+          "created_by": "/bin/sh -c #(nop)  ARG NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:29.738639623Z",
+          "created_by": "/bin/sh -c #(nop)  ENV SONATYPE_DIR=/opt/sonatype",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:30.026156343Z",
+          "created_by": "/bin/sh -c #(nop)  ENV NEXUS_HOME=/opt/sonatype/nexus NEXUS_DATA=/nexus-data NEXUS_CONTEXT= SONATYPE_WORK=/opt/sonatype/sonatype-work DOCKER_TYPE=rh-docker",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:45.473210477Z",
+          "created_by": "|3 NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5 NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz NEXUS_VERSION=3.52.0-01 /bin/sh -c microdnf update -y     \u0026\u0026 microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y           java-1.8.0-openjdk-headless tar procps shadow-utils gzip     \u0026\u0026 microdnf clean all     \u0026\u0026 groupadd --gid 200 -r nexus     \u0026\u0026 useradd --uid 200 -r nexus -g nexus -s /bin/false -d /opt/sonatype/nexus -c 'Nexus Repository Manager user'"
+        },
+        {
+          "created": "2023-04-18T19:39:46.789040682Z",
+          "created_by": "/bin/sh -c #(nop) WORKDIR /opt/sonatype"
+        },
+        {
+          "created": "2023-04-18T19:39:52.857367236Z",
+          "created_by": "|3 NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5 NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz NEXUS_VERSION=3.52.0-01 /bin/sh -c curl -L ${NEXUS_DOWNLOAD_URL} --output nexus-${NEXUS_VERSION}-unix.tar.gz     \u0026\u0026 echo \"${NEXUS_DOWNLOAD_SHA256_HASH} nexus-${NEXUS_VERSION}-unix.tar.gz\" \u003e nexus-${NEXUS_VERSION}-unix.tar.gz.sha256     \u0026\u0026 sha256sum -c nexus-${NEXUS_VERSION}-unix.tar.gz.sha256     \u0026\u0026 tar -xvf nexus-${NEXUS_VERSION}-unix.tar.gz     \u0026\u0026 rm -f nexus-${NEXUS_VERSION}-unix.tar.gz nexus-${NEXUS_VERSION}-unix.tar.gz.sha256     \u0026\u0026 mv nexus-${NEXUS_VERSION} $NEXUS_HOME     \u0026\u0026 chown -R nexus:nexus ${SONATYPE_WORK}     \u0026\u0026 mv ${SONATYPE_WORK}/nexus3 ${NEXUS_DATA}     \u0026\u0026 ln -s ${NEXUS_DATA} ${SONATYPE_WORK}/nexus3"
+        },
+        {
+          "created": "2023-04-18T19:39:54.534239253Z",
+          "created_by": "|3 NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5 NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz NEXUS_VERSION=3.52.0-01 /bin/sh -c sed -i '/^-Xms/d;/^-Xmx/d;/^-XX:MaxDirectMemorySize/d' $NEXUS_HOME/bin/nexus.vmoptions"
+        },
+        {
+          "created": "2023-04-18T19:39:55.29403777Z",
+          "created_by": "|3 NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5 NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz NEXUS_VERSION=3.52.0-01 /bin/sh -c echo \"#!/bin/bash\" \u003e\u003e ${SONATYPE_DIR}/start-nexus-repository-manager.sh    \u0026\u0026 echo \"cd /opt/sonatype/nexus\" \u003e\u003e ${SONATYPE_DIR}/start-nexus-repository-manager.sh    \u0026\u0026 echo \"exec ./bin/nexus run\" \u003e\u003e ${SONATYPE_DIR}/start-nexus-repository-manager.sh    \u0026\u0026 chmod a+x ${SONATYPE_DIR}/start-nexus-repository-manager.sh    \u0026\u0026 sed -e '/^nexus-context/ s:$:${NEXUS_CONTEXT}:' -i ${NEXUS_HOME}/etc/nexus-default.properties"
+        },
+        {
+          "created": "2023-04-18T19:39:56.66500425Z",
+          "created_by": "|3 NEXUS_DOWNLOAD_SHA256_HASH=f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5 NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz NEXUS_VERSION=3.52.0-01 /bin/sh -c microdnf remove -y tar gzip shadow-utils"
+        },
+        {
+          "created": "2023-04-18T19:39:56.97212854Z",
+          "created_by": "/bin/sh -c #(nop)  VOLUME [/nexus-data]",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:57.282274884Z",
+          "created_by": "/bin/sh -c #(nop)  EXPOSE 8081",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:57.516413579Z",
+          "created_by": "/bin/sh -c #(nop)  USER nexus",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:57.758530513Z",
+          "created_by": "/bin/sh -c #(nop)  ENV INSTALL4J_ADD_VM_PARAMS=-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -Djava.util.prefs.userRoot=/nexus-data/javaprefs",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-04-18T19:39:58.005095009Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/opt/sonatype/nexus/bin/nexus\" \"run\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:55ea6d5a354edb8a6eeeadb772359359f82959156d04193d5a7b2d79c827d9ee",
+          "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d",
+          "sha256:a9ed685f6644acb6189830fc6de9214c929180c151055543bbfc180675d3fbc9",
+          "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26",
+          "sha256:5c00dc1b4100409c8769cdc961009bc17e79c737fc1f7c575ef0f98b4eeb6173",
+          "sha256:45927ac9b717aee2a521a5cbe225fe6d41e17e9c47ead6919ede4ac634ef1143",
+          "sha256:42142017a69c0d7f10d946c9dc3ee8e87b0d2b04db59361caf6564373f67c1b2"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "/opt/sonatype/nexus/bin/nexus",
+          "run"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "container=oci",
+          "SONATYPE_DIR=/opt/sonatype",
+          "NEXUS_HOME=/opt/sonatype/nexus",
+          "NEXUS_DATA=/nexus-data",
+          "NEXUS_CONTEXT=",
+          "SONATYPE_WORK=/opt/sonatype/sonatype-work",
+          "DOCKER_TYPE=rh-docker",
+          "INSTALL4J_ADD_VM_PARAMS=-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -Djava.util.prefs.userRoot=/nexus-data/javaprefs"
+        ],
+        "Image": "sha256:18271dc36d65615b2540a563a024a153c02de49c2341ab69465b6cd97294d3b3",
+        "Labels": {
+          "architecture": "x86_64",
+          "build-date": "2023-03-28T04:02:11",
+          "com.redhat.component": "ubi8-minimal-container",
+          "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+          "com.sonatype.license": "Apache License, Version 2.0",
+          "com.sonatype.name": "Nexus Repository Manager base image",
+          "description": "The Nexus Repository Manager server           with universal support for popular component formats.",
+          "distribution-scope": "public",
+          "io.buildah.version": "1.27.3",
+          "io.k8s.description": "The Nexus Repository Manager server           with universal support for popular component formats.",
+          "io.k8s.display-name": "Nexus Repository Manager",
+          "io.openshift.expose-services": "8081:8081",
+          "io.openshift.tags": "Sonatype,Nexus,Repository Manager",
+          "maintainer": "Sonatype \u003csupport@sonatype.com\u003e",
+          "name": "Nexus Repository Manager",
+          "release": "3.52.0",
+          "run": "docker run -d --name NAME           -p 8081:8081           IMAGE",
+          "stop": "docker stop NAME",
+          "summary": "The Nexus Repository Manager server           with universal support for popular component formats.",
+          "url": "https://sonatype.com",
+          "vcs-ref": "146fdafc2595e26f5f9c1b9a2b3f36bbca8237e4",
+          "vcs-type": "git",
+          "vendor": "Sonatype",
+          "version": "3.52.0-01"
+        },
+        "User": "nexus",
+        "Volumes": {
+          "/nexus-data": {}
+        },
+        "WorkingDir": "/opt/sonatype",
+        "ExposedPorts": {
+          "8081/tcp": {}
+        }
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "2aaf6c0ae473 (redhat 8.7)",
+      "Class": "os-pkgs",
+      "Type": "redhat",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-27535",
+          "VendorIDs": [
+            "RHSA-2023:3106"
+          ],
+          "PkgID": "curl@7.61.1-25.el8_7.3.x86_64",
+          "PkgName": "curl",
+          "InstalledVersion": "7.61.1-25.el8_7.3",
+          "FixedVersion": "7.61.1-30.el8_8.2",
+          "Layer": {
+            "DiffID": "sha256:55ea6d5a354edb8a6eeeadb772359359f82959156d04193d5a7b2d79c827d9ee"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27535",
+          "Title": "FTP too eager connection reuse",
+          "Description": "An authentication bypass vulnerability exists in libcurl \u003c8.0.0 in the FTP connection reuse feature that can result in wrong credentials being used during subsequent transfers. Previously created connections are kept in a connection pool for reuse if they match the current setup. However, certain FTP settings such as CURLOPT_FTP_ACCOUNT, CURLOPT_FTP_ALTERNATIVE_TO_USER, CURLOPT_FTP_SSL_CCC, and CURLOPT_USE_SSL were not included in the configuration match checks, causing them to match too easily. This could lead to libcurl using the wrong credentials when performing a transfer, potentially allowing unauthorized access to sensitive information.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-287"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:2650",
+            "https://access.redhat.com/security/cve/CVE-2023-27535",
+            "https://bugzilla.redhat.com/2179073",
+            "https://curl.se/docs/CVE-2023-27535.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27535",
+            "https://errata.almalinux.org/9/ALSA-2023-2650.html",
+            "https://hackerone.com/reports/1892780",
+            "https://linux.oracle.com/cve/CVE-2023-27535.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3106.html",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00025.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/36NBD5YLJXXEDZLDGNFCERWRYJQ6LAQW/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27535",
+            "https://security.netapp.com/advisory/ntap-20230420-0010/",
+            "https://ubuntu.com/security/notices/USN-5964-1",
+            "https://ubuntu.com/security/notices/USN-5964-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27535"
+          ],
+          "PublishedDate": "2023-03-30T20:15:00Z",
+          "LastModifiedDate": "2023-04-21T23:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-21930",
+          "VendorIDs": [
+            "RHSA-2023:1908"
+          ],
+          "PkgID": "java-1.8.0-openjdk-headless@1.8.0.362.b09-2.el8_7.x86_64",
+          "PkgName": "java-1.8.0-openjdk-headless",
+          "InstalledVersion": "1:1.8.0.362.b09-2.el8_7",
+          "FixedVersion": "1:1.8.0.372.b07-1.el8_7",
+          "Layer": {
+            "DiffID": "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-21930",
+          "Title": "improper connection handling during TLS handshake (8294474)",
+          "Description": "Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u361, 8u361-perf, 11.0.18, 17.0.6, 20; Oracle GraalVM Enterprise Edition: 20.3.9, 21.3.5 and  22.3.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via TLS to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data as well as  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 7.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N).",
+          "Severity": "HIGH",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1909",
+            "https://access.redhat.com/security/cve/CVE-2023-21930",
+            "https://bugzilla.redhat.com/2187435",
+            "https://bugzilla.redhat.com/2187441",
+            "https://bugzilla.redhat.com/2187704",
+            "https://bugzilla.redhat.com/2187724",
+            "https://bugzilla.redhat.com/2187758",
+            "https://bugzilla.redhat.com/2187790",
+            "https://bugzilla.redhat.com/2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187435",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187441",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187704",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187724",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187758",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187790",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188024",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21930",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21939",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21954",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21968",
+            "https://errata.almalinux.org/9/ALSA-2023-1909.html",
+            "https://errata.rockylinux.org/RLSA-2023:1909",
+            "https://linux.oracle.com/cve/CVE-2023-21930.html",
+            "https://linux.oracle.com/errata/ELSA-2023-1909.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-21930",
+            "https://security.netapp.com/advisory/ntap-20230427-0008/",
+            "https://ubuntu.com/security/notices/USN-6077-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-21930",
+            "https://www.oracle.com/security-alerts/cpuapr2023.html"
+          ],
+          "PublishedDate": "2023-04-18T20:15:00Z",
+          "LastModifiedDate": "2023-04-27T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-21939",
+          "VendorIDs": [
+            "RHSA-2023:1908"
+          ],
+          "PkgID": "java-1.8.0-openjdk-headless@1.8.0.362.b09-2.el8_7.x86_64",
+          "PkgName": "java-1.8.0-openjdk-headless",
+          "InstalledVersion": "1:1.8.0.362.b09-2.el8_7",
+          "FixedVersion": "1:1.8.0.372.b07-1.el8_7",
+          "Layer": {
+            "DiffID": "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-21939",
+          "Title": "Swing HTML parsing issue (8296832)",
+          "Description": "Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Swing).  Supported versions that are affected are Oracle Java SE: 8u361, 8u361-perf, 11.0.18, 17.0.6, 20; Oracle GraalVM Enterprise Edition: 20.3.9, 21.3.5 and  22.3.1. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.3 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1909",
+            "https://access.redhat.com/security/cve/CVE-2023-21939",
+            "https://bugzilla.redhat.com/2187435",
+            "https://bugzilla.redhat.com/2187441",
+            "https://bugzilla.redhat.com/2187704",
+            "https://bugzilla.redhat.com/2187724",
+            "https://bugzilla.redhat.com/2187758",
+            "https://bugzilla.redhat.com/2187790",
+            "https://bugzilla.redhat.com/2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187435",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187441",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187704",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187724",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187758",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187790",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188024",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21930",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21939",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21954",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21968",
+            "https://errata.almalinux.org/9/ALSA-2023-1909.html",
+            "https://errata.rockylinux.org/RLSA-2023:1909",
+            "https://linux.oracle.com/cve/CVE-2023-21939.html",
+            "https://linux.oracle.com/errata/ELSA-2023-1909.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-21939",
+            "https://security.netapp.com/advisory/ntap-20230427-0008/",
+            "https://ubuntu.com/security/notices/USN-6077-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-21939",
+            "https://www.oracle.com/security-alerts/cpuapr2023.html"
+          ],
+          "PublishedDate": "2023-04-18T20:15:00Z",
+          "LastModifiedDate": "2023-04-27T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-21954",
+          "VendorIDs": [
+            "RHSA-2023:1908"
+          ],
+          "PkgID": "java-1.8.0-openjdk-headless@1.8.0.362.b09-2.el8_7.x86_64",
+          "PkgName": "java-1.8.0-openjdk-headless",
+          "InstalledVersion": "1:1.8.0.362.b09-2.el8_7",
+          "FixedVersion": "1:1.8.0.372.b07-1.el8_7",
+          "Layer": {
+            "DiffID": "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-21954",
+          "Title": "incorrect enqueue of references in garbage collector (8298191)",
+          "Description": "Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Hotspot).  Supported versions that are affected are Oracle Java SE: 8u361, 8u361-perf, 11.0.18, 17.0.6; Oracle GraalVM Enterprise Edition: 20.3.9, 21.3.5 and  22.3.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.9 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1909",
+            "https://access.redhat.com/security/cve/CVE-2023-21954",
+            "https://bugzilla.redhat.com/2187435",
+            "https://bugzilla.redhat.com/2187441",
+            "https://bugzilla.redhat.com/2187704",
+            "https://bugzilla.redhat.com/2187724",
+            "https://bugzilla.redhat.com/2187758",
+            "https://bugzilla.redhat.com/2187790",
+            "https://bugzilla.redhat.com/2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187435",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187441",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187704",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187724",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187758",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187790",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188024",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21930",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21939",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21954",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21968",
+            "https://errata.almalinux.org/9/ALSA-2023-1909.html",
+            "https://errata.rockylinux.org/RLSA-2023:1909",
+            "https://linux.oracle.com/cve/CVE-2023-21954.html",
+            "https://linux.oracle.com/errata/ELSA-2023-1909.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-21954",
+            "https://security.netapp.com/advisory/ntap-20230427-0008/",
+            "https://ubuntu.com/security/notices/USN-6077-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-21954",
+            "https://www.oracle.com/security-alerts/cpuapr2023.html"
+          ],
+          "PublishedDate": "2023-04-18T20:15:00Z",
+          "LastModifiedDate": "2023-04-27T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-21967",
+          "VendorIDs": [
+            "RHSA-2023:1908"
+          ],
+          "PkgID": "java-1.8.0-openjdk-headless@1.8.0.362.b09-2.el8_7.x86_64",
+          "PkgName": "java-1.8.0-openjdk-headless",
+          "InstalledVersion": "1:1.8.0.362.b09-2.el8_7",
+          "FixedVersion": "1:1.8.0.372.b07-1.el8_7",
+          "Layer": {
+            "DiffID": "sha256:dfcdb4d5373fa08655b7ab3c862ddb4f1b2718ec09e1a9b5769a36f9cd1a366d"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-21967",
+          "Title": "certificate validation issue in TLS session negotiation (8298310)",
+          "Description": "Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u361, 8u361-perf, 11.0.18, 17.0.6, 20; Oracle GraalVM Enterprise Edition: 20.3.9, 21.3.5 and  22.3.1. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H).",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:1909",
+            "https://access.redhat.com/security/cve/CVE-2023-21967",
+            "https://bugzilla.redhat.com/2187435",
+            "https://bugzilla.redhat.com/2187441",
+            "https://bugzilla.redhat.com/2187704",
+            "https://bugzilla.redhat.com/2187724",
+            "https://bugzilla.redhat.com/2187758",
+            "https://bugzilla.redhat.com/2187790",
+            "https://bugzilla.redhat.com/2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187435",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187441",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187704",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187724",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187758",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187790",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2187802",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2188024",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21930",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21937",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21938",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21939",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21954",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21967",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21968",
+            "https://errata.almalinux.org/9/ALSA-2023-1909.html",
+            "https://errata.rockylinux.org/RLSA-2023:1909",
+            "https://linux.oracle.com/cve/CVE-2023-21967.html",
+            "https://linux.oracle.com/errata/ELSA-2023-1909.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-21967",
+            "https://security.netapp.com/advisory/ntap-20230427-0008/",
+            "https://ubuntu.com/security/notices/USN-6077-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-21967",
+            "https://www.oracle.com/security-alerts/cpuapr2023.html"
+          ],
+          "PublishedDate": "2023-04-18T20:15:00Z",
+          "LastModifiedDate": "2023-04-27T15:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-27535",
+          "VendorIDs": [
+            "RHSA-2023:3106"
+          ],
+          "PkgID": "libcurl@7.61.1-25.el8_7.3.x86_64",
+          "PkgName": "libcurl",
+          "InstalledVersion": "7.61.1-25.el8_7.3",
+          "FixedVersion": "7.61.1-30.el8_8.2",
+          "Layer": {
+            "DiffID": "sha256:55ea6d5a354edb8a6eeeadb772359359f82959156d04193d5a7b2d79c827d9ee"
+          },
+          "SeveritySource": "redhat",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-27535",
+          "Title": "FTP too eager connection reuse",
+          "Description": "An authentication bypass vulnerability exists in libcurl \u003c8.0.0 in the FTP connection reuse feature that can result in wrong credentials being used during subsequent transfers. Previously created connections are kept in a connection pool for reuse if they match the current setup. However, certain FTP settings such as CURLOPT_FTP_ACCOUNT, CURLOPT_FTP_ALTERNATIVE_TO_USER, CURLOPT_FTP_SSL_CCC, and CURLOPT_USE_SSL were not included in the configuration match checks, causing them to match too easily. This could lead to libcurl using the wrong credentials when performing a transfer, potentially allowing unauthorized access to sensitive information.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-287"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:2650",
+            "https://access.redhat.com/security/cve/CVE-2023-27535",
+            "https://bugzilla.redhat.com/2179073",
+            "https://curl.se/docs/CVE-2023-27535.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27535",
+            "https://errata.almalinux.org/9/ALSA-2023-2650.html",
+            "https://hackerone.com/reports/1892780",
+            "https://linux.oracle.com/cve/CVE-2023-27535.html",
+            "https://linux.oracle.com/errata/ELSA-2023-3106.html",
+            "https://lists.debian.org/debian-lts-announce/2023/04/msg00025.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/36NBD5YLJXXEDZLDGNFCERWRYJQ6LAQW/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-27535",
+            "https://security.netapp.com/advisory/ntap-20230420-0010/",
+            "https://ubuntu.com/security/notices/USN-5964-1",
+            "https://ubuntu.com/security/notices/USN-5964-2",
+            "https://www.cve.org/CVERecord?id=CVE-2023-27535"
+          ],
+          "PublishedDate": "2023-03-30T20:15:00Z",
+          "LastModifiedDate": "2023-04-21T23:15:00Z"
+        }
+      ]
+    },
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2021-23463",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/sonatype/nexus/system/com/h2database/h2/1.4.200/h2-1.4.200.jar",
+          "InstalledVersion": "1.4.200",
+          "FixedVersion": "2.0.202",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23463",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "h2database: XXE injection vulnerability",
+          "Description": "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-611"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "V2Score": 6.4,
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-23463",
+            "https://github.com/advisories/GHSA-7rpj-hg47-cx62",
+            "https://github.com/boris-unckel/h2database/commit/f9ad6aef2bfa59eba2b4d3e7c4c32d2cce8e8b05",
+            "https://github.com/h2database/h2database/commit/d83285fd2e48fb075780ee95badee6f5a15ea7f8%23diff-008c2e4462609982199cd83e7cf6f1d6b41296b516783f6752c44b9f15dc7bc3",
+            "https://github.com/h2database/h2database/issues/3195",
+            "https://github.com/h2database/h2database/pull/3199",
+            "https://github.com/h2database/h2database/pull/3199#issuecomment-1002830390",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-23463",
+            "https://snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-1769238",
+            "https://www.cve.org/CVERecord?id=CVE-2021-23463",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2021-12-10T20:15:00Z",
+          "LastModifiedDate": "2022-04-28T14:53:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-42392",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/sonatype/nexus/system/com/h2database/h2/1.4.200/h2-1.4.200.jar",
+          "InstalledVersion": "1.4.200",
+          "FixedVersion": "2.0.206",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-42392",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "h2: Remote Code Execution in Console",
+          "Description": "The org.h2.util.JdbcUtils.getConnection method of the H2 database takes as parameters the class name of the driver and URL of the database. An attacker may pass a JNDI driver name and a URL leading to a LDAP or RMI servers, causing remote code execution. This can be exploited through various attack vectors, most notably through the H2 Console which leads to unauthenticated remote code execution.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-42392",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42392",
+            "https://github.com/advisories/GHSA-h376-j262-vhq6",
+            "https://github.com/h2database/h2database/releases/tag/version-2.0.206",
+            "https://github.com/h2database/h2database/security/advisories/GHSA-h376-j262-vhq6",
+            "https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-42392",
+            "https://security.netapp.com/advisory/ntap-20220119-0001/",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-42392",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.secpod.com/blog/log4shell-critical-remote-code-execution-vulnerability-in-h2database-console/"
+          ],
+          "PublishedDate": "2022-01-10T14:10:00Z",
+          "LastModifiedDate": "2023-02-24T22:15:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-23221",
+          "PkgName": "com.h2database:h2",
+          "PkgPath": "opt/sonatype/nexus/system/com/h2database/h2/1.4.200/h2-1.4.200.jar",
+          "InstalledVersion": "1.4.200",
+          "FixedVersion": "2.1.210",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23221",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "h2: Loading of custom classes from remote servers through JNDI",
+          "Description": "H2 Console before 2.1.210 allows remote attackers to execute arbitrary code via a jdbc:h2:mem JDBC URL containing the IGNORE_UNKNOWN_SETTINGS=TRUE;FORBID_CREATION=FALSE;INIT=RUNSCRIPT substring, a different vulnerability than CVE-2021-42392.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-94"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/165676/H2-Database-Console-Remote-Code-Execution.html",
+            "http://seclists.org/fulldisclosure/2022/Jan/39",
+            "https://access.redhat.com/security/cve/CVE-2022-23221",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23221",
+            "https://github.com/advisories/GHSA-45hx-wfhj-473x",
+            "https://github.com/h2database/h2database/releases/tag/version-2.1.210",
+            "https://github.com/h2database/h2database/security/advisories",
+            "https://lists.debian.org/debian-lts-announce/2022/02/msg00017.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-23221",
+            "https://twitter.com/d0nkey_man/status/1483824727936450564",
+            "https://ubuntu.com/security/notices/USN-5365-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-23221",
+            "https://www.debian.org/security/2022/dsa-5076",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html"
+          ],
+          "PublishedDate": "2022-01-19T17:15:00Z",
+          "LastModifiedDate": "2022-10-05T01:54:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-33264",
+          "PkgName": "com.hazelcast:hazelcast",
+          "PkgPath": "opt/sonatype/nexus/system/com/hazelcast/hazelcast/3.12.13/hazelcast-3.12.13.jar",
+          "InstalledVersion": "3.12.13",
+          "FixedVersion": "5.3.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-33264",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "Hazelcast vulnerable to unmasked password exposure",
+          "Description": "In Hazelcast through 5.0.4, 5.1 through 5.1.6, and 5.2 through 5.2.3, configuration routines don't mask passwords in the member configuration properly. This allows Hazelcast Management Center users to view some of the secrets.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-5gj6-62g7-vmgf",
+            "https://github.com/hazelcast/hazelcast/commit/74eed86c2b2b727148c442e98a01d0ca6941a49e",
+            "https://github.com/hazelcast/hazelcast/pull/24266",
+            "https://github.com/hazelcast/hazelcast/pull/24266/commits/80a502d53cc48bf895711ab55f95e3a51e344ac1",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-33264"
+          ],
+          "PublishedDate": "2023-05-22T01:15:00Z",
+          "LastModifiedDate": "2023-05-26T02:23:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-22602",
+          "PkgName": "org.apache.shiro:shiro-core",
+          "PkgPath": "opt/sonatype/nexus/system/org/apache/shiro/shiro-core/1.10.0/shiro-core-1.10.0.jar",
+          "InstalledVersion": "1.10.0",
+          "FixedVersion": "1.11.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-22602",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "Authentication bypass through a specially crafted HTTP request",
+          "Description": "When using Apache Shiro before 1.11.0 together with Spring Boot 2.6+, a specially crafted HTTP request may cause an authentication bypass. The authentication bypass occurs when Shiro and Spring Boot are using different pattern-matching techniques. Both Shiro and Spring Boot \u003c 2.6 default to Ant style pattern matching. Mitigation: Update to Apache Shiro 1.11.0, or set the following Spring Boot configuration value: `spring.mvc.pathmatch.matching-strategy = ant_path_matcher`",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-436"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-22602",
+            "https://github.com/advisories/GHSA-7cxr-h8wm-fg4c",
+            "https://lists.apache.org/thread/dzj0k2smpzzgj6g666hrbrgsrlf9yhkl",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-22602",
+            "https://www.cve.org/CVERecord?id=CVE-2023-22602"
+          ],
+          "PublishedDate": "2023-01-14T10:15:00Z",
+          "LastModifiedDate": "2023-01-27T15:57:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-17521",
+          "PkgName": "org.codehaus.groovy:groovy-all",
+          "PkgPath": "opt/sonatype/nexus/system/org/codehaus/groovy/groovy-all/2.4.17/groovy-all-2.4.17.jar",
+          "InstalledVersion": "2.4.17",
+          "FixedVersion": "2.4.21, 2.5.14, 3.0.7",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-17521",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "groovy: OS temporary directory leads to information disclosure",
+          "Description": "Apache Groovy provides extension methods to aid with creating temporary directories. Prior to this fix, Groovy's implementation of those extension methods was using a now superseded Java JDK method call that is potentially not secure on some operating systems in some contexts. Users not using the extension methods mentioned in the advisory are not affected, but may wish to read the advisory for further details. Versions Affected: 2.0 to 2.4.20, 2.5.0 to 2.5.13, 3.0.0 to 3.0.6, and 4.0.0-alpha-1. Fixed in versions 2.4.21, 2.5.14, 3.0.7, 4.0.0-alpha-2.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V2Vector": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 2.1,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-17521",
+            "https://github.com/advisories/GHSA-rcjj-h6gh-jf3r",
+            "https://github.com/apache/groovy/commit/bcbe5c4c76db83736166530647c024ac1e47ef28",
+            "https://github.com/apache/groovy/pull/1425",
+            "https://groovy-lang.org/security.html#CVE-2020-17521",
+            "https://lists.apache.org/thread.html/r4b2f13c302eec98838ff7475253091fb9b75bc1038016ba00ebf6c08@%3Cdev.atlas.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra9dab34bf8625511f23692ad0fcee2725f782e9aad6c5cdff6cf4465@%3Cnotifications.groovy.apache.org%3E",
+            "https://lists.apache.org/thread.html/rea63a4666ba245d2892471307772a2d8ce0f0741f341d6576625c1b3@%3Cdev.atlas.apache.org%3E",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-17521",
+            "https://security.netapp.com/advisory/ntap-20201218-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2020-17521",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://www.oracle.com/security-alerts/cpuApr2021.html",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2021.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2020-12-07T20:15:00Z",
+          "LastModifiedDate": "2023-04-14T18:32:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-7611",
+          "PkgName": "org.elasticsearch:elasticsearch",
+          "PkgPath": "opt/sonatype/nexus/system/org/sonatype/nexus/bundles/org.sonatype.nexus.bundles.elasticsearch/3.52.0-01/org.sonatype.nexus.bundles.elasticsearch-3.52.0-01.jar",
+          "InstalledVersion": "2.4.3",
+          "FixedVersion": "5.6.15, 6.6.1",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-7611",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "elasticsearch: Improper permission issue when attaching a new name to an index",
+          "Description": "A permission issue was found in Elasticsearch versions before 5.6.15 and 6.6.1 when Field Level Security and Document Level Security are disabled and the _aliases, _shrink, or _split endpoints are used . If the elasticsearch.yml file has xpack.security.dls_fls.enabled set to false, certain permission checks are skipped when users perform one of the actions mentioned above, to make existing data available under a new index/alias name. This could result in an attacker gaining additional permissions against a restricted index.",
+          "Severity": "HIGH",
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 8.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2019-7611",
+            "https://discuss.elastic.co/t/elastic-stack-6-6-1-and-5-6-15-security-update/169077",
+            "https://github.com/advisories/GHSA-fj32-6v7m-57pg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-7611",
+            "https://www.cve.org/CVERecord?id=CVE-2019-7611",
+            "https://www.elastic.co/community/security"
+          ],
+          "PublishedDate": "2019-03-25T19:29:00Z",
+          "LastModifiedDate": "2020-10-19T18:10:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2019-7614",
+          "PkgName": "org.elasticsearch:elasticsearch",
+          "PkgPath": "opt/sonatype/nexus/system/org/sonatype/nexus/bundles/org.sonatype.nexus.bundles.elasticsearch/3.52.0-01/org.sonatype.nexus.bundles.elasticsearch-3.52.0-01.jar",
+          "InstalledVersion": "2.4.3",
+          "FixedVersion": "6.8.2, 7.2.1",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-7614",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "elasticsearch: Race condition in response headers on systems with multiple submitting requests",
+          "Description": "A race condition flaw was found in the response headers Elasticsearch versions before 7.2.1 and 6.8.2 returns to a request. On a system with multiple users submitting requests, it could be possible for an attacker to gain access to response header containing sensitive data from another user.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-362"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:A/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 2
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2019-7614",
+            "https://github.com/advisories/GHSA-jqm6-m3j3-8gg9",
+            "https://nvd.nist.gov/vuln/detail/CVE-2019-7614",
+            "https://www.cve.org/CVERecord?id=CVE-2019-7614",
+            "https://www.elastic.co/community/security/"
+          ],
+          "PublishedDate": "2019-07-30T22:15:00Z",
+          "LastModifiedDate": "2023-03-03T19:17:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-7021",
+          "PkgName": "org.elasticsearch:elasticsearch",
+          "PkgPath": "opt/sonatype/nexus/system/org/sonatype/nexus/bundles/org.sonatype.nexus.bundles.elasticsearch/3.52.0-01/org.sonatype.nexus.bundles.elasticsearch-3.52.0-01.jar",
+          "InstalledVersion": "2.4.3",
+          "FixedVersion": "6.8.14, 7.10.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7021",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "elasticsearch: Information disclosure via audit logging with emit_request_body option enabled",
+          "Description": "Elasticsearch versions before 7.10.0 and 6.8.14 have an information disclosure issue when audit logging and the emit_request_body option is enabled. The Elasticsearch audit log could contain sensitive information such as password hashes or authentication tokens. This could allow an Elasticsearch administrator to view these details.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-532"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 4.9
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 4,
+              "V3Score": 4.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 1.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-7021",
+            "https://discuss.elastic.co/t/elastic-stack-7-11-0-and-6-8-14-security-update/263915",
+            "https://github.com/advisories/GHSA-cqgv-256r-m9r8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-7021",
+            "https://security.netapp.com/advisory/ntap-20210319-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2020-7021"
+          ],
+          "PublishedDate": "2021-02-10T19:15:00Z",
+          "LastModifiedDate": "2021-03-26T12:49:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22135",
+          "PkgName": "org.elasticsearch:elasticsearch",
+          "PkgPath": "opt/sonatype/nexus/system/org/sonatype/nexus/bundles/org.sonatype.nexus.bundles.elasticsearch/3.52.0-01/org.sonatype.nexus.bundles.elasticsearch-3.52.0-01.jar",
+          "InstalledVersion": "2.4.3",
+          "FixedVersion": "6.8.15",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22135",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "elasticsearch: Document disclosure flaw in the Elasticsearch suggester",
+          "Description": "Elasticsearch versions before 7.11.2 and 6.8.15 contain a document disclosure flaw was found in the Elasticsearch suggester and profile API when Document and Field Level Security are enabled. The suggester and profile API are normally disabled for an index when document level security is enabled on the index. Certain queries are able to enable the profiler and suggester which could lead to disclosing the existence of documents and fields the attacker should not be able to view.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-22135",
+            "https://discuss.elastic.co/t/elastic-stack-7-12-0-and-6-8-15-security-update/268125",
+            "https://github.com/advisories/GHSA-62ww-4p3p-7fhj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-22135",
+            "https://security.netapp.com/advisory/ntap-20210625-0003/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-22135"
+          ],
+          "PublishedDate": "2021-05-13T18:15:00Z",
+          "LastModifiedDate": "2021-09-07T22:06:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-22144",
+          "PkgName": "org.elasticsearch:elasticsearch",
+          "PkgPath": "opt/sonatype/nexus/system/org/sonatype/nexus/bundles/org.sonatype.nexus.bundles.elasticsearch/3.52.0-01/org.sonatype.nexus.bundles.elasticsearch-3.52.0-01.jar",
+          "InstalledVersion": "2.4.3",
+          "FixedVersion": "6.8.17, 7.13.3",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-22144",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "uncontrolled recursion in Grok parser",
+          "Description": "In Elasticsearch versions before 7.13.3 and 6.8.17 an uncontrolled recursion vulnerability that could lead to a denial of service attack was identified in the Elasticsearch Grok parser. A user with the ability to submit arbitrary queries to Elasticsearch could create a malicious Grok query that will crash the Elasticsearch node.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-674"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.7
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 4,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-22144",
+            "https://discuss.elastic.co/t/elasticsearch-7-13-3-and-6-8-17-security-update/278100",
+            "https://github.com/advisories/GHSA-3393-hvrj-w7v3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-22144",
+            "https://security.netapp.com/advisory/ntap-20210827-0006/",
+            "https://www.cve.org/CVERecord?id=CVE-2021-22144",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html"
+          ],
+          "PublishedDate": "2021-07-26T12:15:00Z",
+          "LastModifiedDate": "2022-05-10T18:02:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3827",
+          "PkgName": "org.keycloak:keycloak-saml-core",
+          "PkgPath": "opt/sonatype/nexus/system/org/keycloak/keycloak-saml-core/12.0.3/keycloak-saml-core-12.0.3.jar",
+          "InstalledVersion": "12.0.3",
+          "FixedVersion": "18.0.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3827",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Title": "keycloak-server-spi-private: ECP SAML binding bypasses authentication flows",
+          "Description": "A flaw was found in keycloak, where the default ECP binding flow allows other authentication flows to be bypassed. By exploiting this behavior, an attacker can bypass the MFA authentication by sending a SOAP request with an AuthnRequest and Authorization header with the user's credentials. The highest threat from this vulnerability is to confidentiality and integrity.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-287"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 8.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 6.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-3827",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2007512",
+            "https://github.com/advisories/GHSA-4pc7-vqv5-5r3v",
+            "https://github.com/keycloak/keycloak/commit/44000caaf5051d7f218d1ad79573bd3d175cad0d",
+            "https://github.com/keycloak/keycloak/security/advisories/GHSA-4pc7-vqv5-5r3v",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-3827",
+            "https://www.cve.org/CVERecord?id=CVE-2021-3827"
+          ],
+          "PublishedDate": "2022-08-23T16:15:00Z",
+          "LastModifiedDate": "2022-11-30T18:46:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1245",
+          "PkgName": "org.keycloak:keycloak-saml-core-public",
+          "PkgPath": "opt/sonatype/nexus/system/org/keycloak/keycloak-saml-core-public/12.0.3/keycloak-saml-core-public-12.0.3.jar",
+          "InstalledVersion": "12.0.3",
+          "FixedVersion": "18.0.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1245",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "keycloak: Privilege escalation vulnerability on Token Exchange",
+          "Description": "A privilege escalation flaw was found in the token exchange feature of keycloak. Missing authorization allows a client application holding a valid access token to exchange tokens for any target client by passing the client_id of the target. This could allow a client to gain unauthorized access to additional services.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-862"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1245",
+            "https://github.com/advisories/GHSA-75p6-52g3-rqc8",
+            "https://github.com/keycloak/keycloak/commit/76d83f46fad94ebcbedaa49e6daad458e2894e52",
+            "https://github.com/keycloak/keycloak/security/advisories/GHSA-75p6-52g3-rqc8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1245",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1245"
+          ],
+          "PublishedDate": "2022-07-08T00:15:00Z",
+          "LastModifiedDate": "2022-07-15T17:10:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1466",
+          "PkgName": "org.keycloak:keycloak-saml-core-public",
+          "PkgPath": "opt/sonatype/nexus/system/org/keycloak/keycloak-saml-core-public/12.0.3/keycloak-saml-core-public-12.0.3.jar",
+          "InstalledVersion": "12.0.3",
+          "FixedVersion": "17.0.1",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1466",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "keycloak: Improper authorization for master realm",
+          "Description": "Due to improper authorization, Red Hat Single Sign-On is vulnerable to users performing actions that they should not be allowed to perform. It was possible to add users to the master realm even though no respective permission was granted.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-863"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "V2Score": 4,
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-1466",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2050228",
+            "https://github.com/advisories/GHSA-f32v-vf79-p29q",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1466",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1466",
+            "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2021-076.txt",
+            "https://www.syss.de/pentest-blog/fehlerhafte-autorisierung-bei-red-hat-single-sign-on-750ga-syss-2021-076"
+          ],
+          "PublishedDate": "2022-04-26T19:15:00Z",
+          "LastModifiedDate": "2022-05-06T14:05:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1471",
+          "PkgName": "org.yaml:snakeyaml",
+          "PkgPath": "opt/sonatype/nexus/system/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar",
+          "InstalledVersion": "1.33",
+          "FixedVersion": "2.0",
+          "Layer": {
+            "DiffID": "sha256:6c9306d20f18c4556628516b24d230d83adaa506b126d59c221ca777b0086e26"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+          "DataSource": {
+            "ID": "glad",
+            "Name": "GitLab Advisory Database Community",
+            "URL": "https://gitlab.com/gitlab-org/advisories-community"
+          },
+          "Title": "Constructor Deserialization Remote Code Execution",
+          "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.\n",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "V3Score": 8.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:9058",
+            "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64876314",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/Changes",
+            "https://bugzilla.redhat.com/2150009",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2150009",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
+            "https://errata.almalinux.org/8/ALSA-2022-9058.html",
+            "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/mbechler/marshalsec",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+            "https://linux.oracle.com/cve/CVE-2022-1471.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+            "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471/",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1471",
+            "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+          ],
+          "PublishedDate": "2022-12-01T11:15:00Z",
+          "LastModifiedDate": "2023-04-25T17:15:00Z"
+        }
+      ]
+    }
+  ]
+}
